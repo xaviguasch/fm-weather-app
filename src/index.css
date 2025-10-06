@@ -1,1 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 @import "tailwindcss";
+
+/* TODO: Remove other ununsed static fonts, maybe */
+
+@theme {
+  --color-midnight-neutral-900: hsl(243, 96%, 9%);
+  --color-midnight-neutral-800: hsl(243, 27%, 20%);
+  --color-midnight-neutral-700: hsl(243, 23%, 24%);
+  --color-midnight-neutral-600: hsl(243, 23%, 30%);
+  --color-midnight-neutral-500: hsl(240, 6%, 70%);
+  --color-midnight-neutral-200: hsl(250, 6%, 84%);
+  --color-midnight-neutral-0: hsl(0, 0%, 100%);
+
+  --color-sun-orange-500: hsl(28, 100%, 52%);
+
+  --color-royal-blue-500: hsl(233, 67%, 56%);
+  --color-royal-blue-700: hsl(248, 70%, 36%);
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-bricolage: "Bricolage Grotesque", san-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-midnight-neutral-900);
+  }
+}
+
+/* Custom typography */
+.text-preset-1 {
+  @apply font-semibold italic;
+  font-size: 92px;
+  line-height: 100%;
+  letter-spacing: -2px;
+}
+
+.text-preset-2 {
+  @apply font-bold;
+  font-family: var(--font-bricolage);
+  font-size: 52px;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+.text-preset-3 {
+  @apply font-light;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.text-preset-4 {
+  @apply font-bold;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+.text-preset-5 {
+  @apply font-medium text-xl;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+.text-preset-5-semibold {
+  @apply font-semibold text-xl;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+.text-preset-6 {
+  @apply font-medium text-lg;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+.text-preset-7 {
+  @apply font-medium text-base;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+.text-preset-8 {
+  @apply font-medium;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0px;
+}

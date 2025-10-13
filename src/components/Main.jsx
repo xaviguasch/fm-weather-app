@@ -1,5 +1,6 @@
 import InfoPanel from "./InfoPanel";
 import DailyFPanel from "./DailyFPanel";
+import HourlyForecast from "./HourlyForecast";
 
 import iconSearch from "../assets/images/icon-search.svg";
 import iconSunny from "../assets/images/icon-sunny.webp";
@@ -76,6 +77,8 @@ const Main = () => {
           <DailyFPanel day="Tue" icon={iconFog} maxTemp={68} minTemp={57} />
         </div>
       </div>
+
+      <HourlyForecast />
     </div>
   );
 };

@@ -1,3 +1,5 @@
+import InfoPanel from "./InfoPanel";
+
 import iconSearch from "../assets/images/icon-search.svg";
 import iconSunny from "../assets/images/icon-sunny.webp";
 
@@ -37,6 +39,13 @@ const Main = () => {
             68º
           </span>
         </div>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4">
+        <InfoPanel text="Feels Like" data="64º" />
+        <InfoPanel text="Humidity" data="46%" />
+        <InfoPanel text="Wild" data="9 mph" />
+        <InfoPanel text="Precipitation" data="0 in" />
       </div>
     </div>
   );

@@ -1,7 +1,15 @@
 import InfoPanel from "./InfoPanel";
+import DailyFPanel from "./DailyFPanel";
 
 import iconSearch from "../assets/images/icon-search.svg";
 import iconSunny from "../assets/images/icon-sunny.webp";
+import iconFog from "../assets/images/icon-fog.webp";
+import iconDrizzle from "../assets/images/icon-drizzle.webp";
+import iconOvercast from "../assets/images/icon-overcast.webp";
+import iconPartlyCloudy from "../assets/images/icon-partly-cloudy.webp";
+import iconRain from "../assets/images/icon-rain.webp";
+import iconSnow from "../assets/images/icon-snow.webp";
+import iconStorm from "../assets/images/icon-storm.webp";
 
 const Main = () => {
   return (
@@ -46,6 +54,27 @@ const Main = () => {
         <InfoPanel text="Humidity" data="46%" />
         <InfoPanel text="Wild" data="9 mph" />
         <InfoPanel text="Precipitation" data="0 in" />
+      </div>
+
+      <div className="flex flex-col gap-5">
+        <h2 className="text-preset-5 text-midnight-neutral-0">
+          Daily forecast
+        </h2>
+
+        <div className="grid grid-cols-3 gap-4">
+          <DailyFPanel day="Tue" icon={iconRain} maxTemp={68} minTemp={57} />
+          <DailyFPanel day="Tue" icon={iconDrizzle} maxTemp={68} minTemp={57} />
+          <DailyFPanel day="Tue" icon={iconSunny} maxTemp={68} minTemp={57} />
+          <DailyFPanel
+            day="Tue"
+            icon={iconPartlyCloudy}
+            maxTemp={68}
+            minTemp={57}
+          />
+          <DailyFPanel day="Tue" icon={iconStorm} maxTemp={68} minTemp={57} />
+          <DailyFPanel day="Tue" icon={iconSnow} maxTemp={68} minTemp={57} />
+          <DailyFPanel day="Tue" icon={iconFog} maxTemp={68} minTemp={57} />
+        </div>
       </div>
     </div>
   );

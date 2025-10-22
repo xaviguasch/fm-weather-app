@@ -12,7 +12,7 @@ import iconStorm from "../assets/images/icon-storm.webp";
 
 const HourlyForecast = ({ data }) => {
   return (
-    <div className="text-midnight-neutral-0 rounded-[20px] bg-midnight-neutral-800 px-4 py-5 flex flex-col gap-y-4">
+    <div className="text-midnight-neutral-0 rounded-[20px] bg-midnight-neutral-800 px-4 lg:px-6 py-5 lg:py-6 flex flex-col gap-y-4 lg:col-start-2 lg:row-start-1 lg:row-end-4">
       <div className="flex flex-row justify-between items-center w-full">
         <h2 className="text-preset-5">Hourly forecast</h2>
 

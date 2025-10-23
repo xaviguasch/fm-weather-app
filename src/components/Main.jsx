@@ -1,6 +1,7 @@
 import InfoPanel from "./InfoPanel";
 import DailyFPanel from "./DailyFPanel";
 import HourlyForecast from "./HourlyForecast";
+import Header from "./Header";
 
 import iconSearch from "../assets/images/icon-search.svg";
 import iconSunny from "../assets/images/icon-sunny.webp";
@@ -14,7 +15,8 @@ import iconStorm from "../assets/images/icon-storm.webp";
 
 const Main = () => {
   return (
-    <div className="mt-12 flex flex-col gap-8 lg:gap-16 max-w-[1216px] mx-auto">
+    <div className=" flex flex-col gap-8 lg:gap-16 max-w-[1216px] mx-auto">
+      <Header />
       <h1 className="text-midnight-neutral-0 text-preset-2 text-center md:px-28 px-3">
         How's the sky looking today?
       </h1>

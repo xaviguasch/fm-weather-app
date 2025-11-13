@@ -1,6 +1,8 @@
 import { fetchWeatherApi } from "openmeteo";
 import Main from "./components/Main";
 
+import { useContext } from "react";
+
 const params = {
   latitude: 52.52,
   longitude: 13.41,

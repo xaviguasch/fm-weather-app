@@ -1,0 +1,18 @@
+export function formatDate(currentDate, userTimeZone) {
+  currentDate = new Date(currentDate);
+
+  const options = {
+    weekday: "long",
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    timeZone: userTimeZone || "UTC",
+  };
+
+  // mdn: use Intl for internationalization
+  const formattedDate = new Intl.DateTimeFormat("en-US", options).format(
+    currentDate
+  );
+
+  return formattedDate;
+}

@@ -1,14 +1,14 @@
 import HourlyPanel from "./HourlyPanel";
 
-import iconSearch from "../assets/images/icon-search.svg";
-import iconSunny from "../assets/images/icon-sunny.webp";
-import iconFog from "../assets/images/icon-fog.webp";
-import iconDrizzle from "../assets/images/icon-drizzle.webp";
-import iconOvercast from "../assets/images/icon-overcast.webp";
-import iconPartlyCloudy from "../assets/images/icon-partly-cloudy.webp";
-import iconRain from "../assets/images/icon-rain.webp";
-import iconSnow from "../assets/images/icon-snow.webp";
-import iconStorm from "../assets/images/icon-storm.webp";
+// import iconSearch from "../assets/images/icon-search.svg";
+// import iconSunny from "../assets/images/icon-sunny.webp";
+// import iconFog from "../assets/images/icon-fog.webp";
+// import iconDrizzle from "../assets/images/icon-drizzle.webp";
+// import iconOvercast from "../assets/images/icon-overcast.webp";
+// import iconPartlyCloudy from "../assets/images/icon-partly-cloudy.webp";
+// import iconRain from "../assets/images/icon-rain.webp";
+// import iconSnow from "../assets/images/icon-snow.webp";
+// import iconStorm from "../assets/images/icon-storm.webp";
 
 const HourlyForecast = ({ data }) => {
   return (
@@ -28,13 +28,13 @@ const HourlyForecast = ({ data }) => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <HourlyPanel icon={iconOvercast} hour="3" temp="68" />
+        {/* <HourlyPanel icon={iconOvercast} hour="3" temp="68" />
         <HourlyPanel icon={iconPartlyCloudy} hour="4" temp="68" />
         <HourlyPanel icon={iconSunny} hour="3" temp="68" />
         <HourlyPanel icon={iconOvercast} hour="3" temp="68" />
         <HourlyPanel icon={iconDrizzle} hour="3" temp="68" />
         <HourlyPanel icon={iconFog} hour="3" temp="68" />
-        <HourlyPanel icon={iconOvercast} hour="3" temp="68" />
+        <HourlyPanel icon={iconOvercast} hour="3" temp="68" /> */}
       </div>
     </div>
   );

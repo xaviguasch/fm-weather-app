@@ -72,10 +72,22 @@ const FrontPage = () => {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 -mt-3 lg:col-start-1 lg:row-start-2">
-          <InfoPanel text="Feels Like" data="64º" />
-          <InfoPanel text="Humidity" data="46%" />
-          <InfoPanel text="Wild" data="9 mph" />
-          <InfoPanel text="Precipitation" data="0 in" />
+          <InfoPanel
+            text="Feels Like"
+            data={`${weatherData?.current.temperature_2m.toFixed(0)}º`}
+          />
+          <InfoPanel
+            text="Humidity"
+            data={`${weatherData?.current.relative_humidity_2m.toFixed(0)}%`}
+          />
+          <InfoPanel
+            text="Wild"
+            data={`${weatherData?.current.wind_speed_10m.toFixed(0)} mph`}
+          />
+          <InfoPanel
+            text="Precipitation"
+            data={`${weatherData?.current.precipitation.toFixed(0)} in`}
+          />
         </div>
 
         <div className="flex flex-col gap-5 lg:col-start-1 lg:row-start-3 lg:row-end-3">

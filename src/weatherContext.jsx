@@ -14,8 +14,6 @@ export function WeatherDataProvider({ children }) {
   });
   const [error, setError] = useState(null);
 
-  console.log(currentCity);
-
   useEffect(() => {
     async function fetchingWeatherData() {
       try {
@@ -23,13 +21,15 @@ export function WeatherDataProvider({ children }) {
         setWeatherData(null);
         const geocodes = await getLocation(currentCity.name);
         const { lat, long, city, country } = geocodes.data;
-        setCurrentCity((prev) => ({ ...prev, lat, long, name: city, country }));
+        setCurrentCity((prev) => ({ lat, long, name: city, country }));
         const result = await getWeatherData({ ...currentCity, lat, long });
         setWeatherData(result);
       } catch (err) {
         setError(`Failed to fetch weather data: ${err}`);
       } finally {
         // Put the loading to false
+        // testing, delete
+        console.log(currentCity);
       }
     }
     fetchingWeatherData();

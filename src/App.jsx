@@ -1,5 +1,5 @@
 import { fetchWeatherApi } from "openmeteo";
-import Main from "./components/Main";
+import FrontPage from "./components/FrontPage";
 
 import { useContext } from "react";
 
@@ -107,7 +107,7 @@ console.log("\nDaily data", weatherData.daily);
 const App = () => {
   return (
     <div className="p-4 md:p-6">
-      <Main />
+      <FrontPage />
     </div>
   );
 };

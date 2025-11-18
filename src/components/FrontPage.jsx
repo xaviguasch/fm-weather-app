@@ -13,7 +13,7 @@ import iconRain from "../assets/images/icon-rain.webp";
 import iconSnow from "../assets/images/icon-snow.webp";
 import iconStorm from "../assets/images/icon-storm.webp";
 
-const Main = () => {
+const FrontPage = () => {
   return (
     <div className=" flex flex-col gap-8 lg:gap-16 max-w-[1216px] mx-auto">
       <Header />
@@ -92,4 +92,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default FrontPage;
